@@ -1,7 +1,6 @@
 .cursorContainer{
-    height: 100px;
-    width: 100px;
-    border: 3px solid black;
-    border-radius: 15%;
-    background-color: blueviolet;
+    height: 10rem;
+    width: 10rem;
+    display: grid;
+    grid-template-columns: auto auto auto;
 }

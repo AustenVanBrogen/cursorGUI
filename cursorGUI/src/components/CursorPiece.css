@@ -1,0 +1,26 @@
+.cursorPiece{
+    height: 100px;
+    width: 100px;
+    border: 3px solid black;
+    border-radius: 15%;
+    background-color: blueviolet;
+}
+
+.cursorPiece1:hover{
+    cursor: grab;
+}
+
+.cursorPiece2:hover{
+    cursor: wait;
+}
+
+.cursorPiece3:hover{
+    cursor: url(../assets/Cursor.cur), pointer;
+}
+/* .cursorPiece{
+    grid-area: main;
+} */
+
+/* .cursorPiece1{
+    height: 300px;
+} */
