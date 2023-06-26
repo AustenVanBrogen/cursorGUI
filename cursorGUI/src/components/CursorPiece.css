@@ -60,10 +60,3 @@ img {
 .cursorPiece6:hover{
     cursor: url(../assets/stick.cur), pointer;
 }
-/* .cursorPiece{
-    grid-area: main;
-} */
-
-/* .cursorPiece1{
-    height: 300px;
-} */
