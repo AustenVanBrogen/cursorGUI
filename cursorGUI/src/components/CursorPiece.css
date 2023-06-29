@@ -1,3 +1,7 @@
+:root{
+    --curCursor: wait;
+}
+
 img {
     max-width: 100%;
     max-height: 100%;
@@ -59,4 +63,8 @@ img {
 
 .cursorPiece6:hover{
     cursor: url(../assets/stick.cur), pointer;
+}
+
+.displayPiece0:hover{
+    cursor: var(--curCursor);
 }
