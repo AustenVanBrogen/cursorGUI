@@ -18,27 +18,40 @@ img {
 }
 
 .cursorPiece1{
+    grid-area: first;
     background-image: url(../assets/grab.svg);
 }
 
 .cursorPiece2{
+    grid-area: second;
     background-image: url(../assets/wait.png);
 }
 
 .cursorPiece3{
+    grid-area: third;
     background-image: url(../assets/aoeCursor.cur);
 }
 
 .cursorPiece4{
+    grid-area: fourth;
     background-image: url(../assets/diamondSword.cur);
 }
 
 .cursorPiece5{
+    grid-area: fifth;
     background-image: url(../assets/jenny.cur);
 }
 
 .cursorPiece6{
+    grid-area: sixth;
     background-image: url(../assets/stick.cur);
+}
+
+.displayPiece0{
+    grid-area: footer;
+    width: 300px;
+    height: 200px;
+    border-color: purple;
 }
 
 .cursorPiece1:hover{

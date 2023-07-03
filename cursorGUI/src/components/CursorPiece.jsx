@@ -1,30 +1,20 @@
 import './CursorPiece.css';
 
-// function filterString(inputString){
-//     const firstIndex = 5;
-//     let filteredString;
-//     filteredString = inputString.substring(firstIndex, inputString.length);
-//     filteredString= filteredString.substring(0, filteredString.indexOf("\""))
-//     return filteredString;
-// }
-
-function CursorPiece({cursorName}){
+function CursorPiece({cursorName, highlightedPiece, setHighlightedPiece}){
     function changeCursor(whichPiece){
-        //console.log(whichPiece)
-        //let pieceData = getComputedStyle(document.querySelector(whichPiece));
+        if(whichPiece == 'displayPiece0'){
+            return;
+        }
         let cssifiedPiece = `.${whichPiece}`;
         let nameOfCursor = getComputedStyle(document.querySelector(cssifiedPiece)).getPropertyValue('cursor');
 
-        // if(nameOfCursor.indexOf("url(") != -1)
-        // {
-        //     nameOfCursor = filterString(nameOfCursor);
-        // }
-
-        //document.querySelector(cssifiedPiece).style.setProperty('--curCursor', nameOfCursor);
+        if(highlightedPiece != ''){
+            document.querySelector(highlightedPiece).style.setProperty('border-color', 'black');
+        }
+        document.querySelector(cssifiedPiece).style.setProperty('border-color', 'red');
+        //setHighlightedPiece(cssifiedPiece);
+        setHighlightedPiece(cssifiedPiece);
         document.querySelector(':root').style.setProperty('--curCursor', nameOfCursor);
-
-
-        //cursorVar.style.setProperty('--curCursor', nameOfCursor);
     }
 
     return(
